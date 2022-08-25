@@ -1,0 +1,61 @@
+<?php
+error_reporting(0);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <style>
+    /* Mensaje de success */
+
+    .mensage-success {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .mensage-success h4 {
+      color: #346009!important;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form action="book.php" method="POST">
+      <label for="nombre">Nombre</label>
+      <input type="text" name="Nombre" id="nombre" placeholder="Nombre" required>
+
+      <label for="apellido">Apellido</label>
+      <input type="text" name="Apellido" id="apellido" placeholder="Apellido" required>
+
+      <label for="dni">Dni</label>
+      <input type="text" name="Dni" id="dni" placeholder="Dni" required>
+
+      <label for="telefono">Telefono de contacto</label>
+      <input type="text" name="Telefono" id="telefono" placeholder="Telefono de Contacto" required>
+
+      <label for="fecha">Fecha</label>
+      <input type="text" name="Fecha" id="fecha" placeholder="Fecha" onfocus="this.type='date'" required>
+
+      <label for="horario">Horario</label>
+      <input type="text" name="Horario" id="horario" placeholder="Horario" onfocus="this.type='time'" required>
+
+      <span></span> <span></span>
+      
+      <div class="reserva">
+        <input type="submit" class="reserva" value="Hacer Pedido de reserva">
+      </div>
+
+    </form>
+  </div>
+  <div class="mensage-success">
+  <h4>Pedido de reserva realizada con exito, en la brevedad se le contactara para confirmar. </h4>
+
+  </div>
+</body>
+</html>
