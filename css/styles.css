@@ -8,8 +8,11 @@
   --verde: #b4cded;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #0e3558;
   font-family: 'Roboto', sans-serif;
   color: var(--letra);
 }
@@ -20,7 +23,6 @@ input {
   border-radius: 15px;
   padding: 0 5px 0 10px;
   background-color: var(--fondo-inputs);
-  text-transform: uppercase;
   
 }
 
@@ -116,10 +118,6 @@ form:nth-child(4) {
 
 }
 
-* {
-  font-family: 'Roboto', sans-serif;
-}
-
 .userdetails {
   display: flex;
   align-items: center;
@@ -164,3 +162,9 @@ td:hover{
   color: #346009!important;
 }
 
+/* top */
+
+.titulo {
+  background-image: url('/img/imgtop.jpg');
+  
+}
